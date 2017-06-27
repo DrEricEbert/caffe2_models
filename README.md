@@ -111,9 +111,6 @@ The three original models (ResNet-50, ResNet-101, and ResNet-152) can be found i
           }
         }
 
-        print(init_net);
-        print(predict_net);
-
         WriteProtoToBinaryFile(init_net, "init_net.pb");
         WriteProtoToBinaryFile(predict_net, "predict_net.pb");
 
