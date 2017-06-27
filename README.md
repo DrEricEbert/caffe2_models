@@ -2,11 +2,23 @@
 
 *A collection of common deep learning models, pre-trained for Caffe2*
 
+- [VGG](#vgg)
+- [ResNet](#resnet)
+
 ## VGG
 
 The VGG model, described in the technical report [Very Deep Convolutional Networks for Large-Scale Visual Recognition](https://arxiv.org/pdf/1409.1556.pdf), pre-trained on the ImageNet dataset, available on the [VGG website](http://www.robots.ox.ac.uk/~vgg/research/very_deep/).
 
+### Model
+
 Both the 16-layer and 19-layer model files can be found in the [model](model/) folder. They require input images of size 224x224. See this [Caffe2 C++ Tutorial](https://github.com/leonardvandriel/caffe2_cpp_tutorial) for an example of how to load this model in Caffe2.
+
+- VGG 16-layer:
+  - [`vgg16_init_net.pb`](model/vgg16_init_net.pb)
+  - [`vgg16_predict_net.pb`](model/vgg16_predict_net.pb)
+- VGG 19-layer:
+  - [`vgg19_init_net.pb`](model/vgg19_init_net.pb)
+  - [`vgg19_predict_net.pb`](model/vgg19_predict_net.pb)
 
 ### How the 16-layer model was generated
 
@@ -42,9 +54,21 @@ Both the 16-layer and 19-layer model files can be found in the [model](model/) f
 
 ## ResNet
 
-The ResNet model, described in the technical report [Deep Residual Learning for Image Recognition](https://arxiv.org/pdf/1512.03385.pdf), pre-trained on the ImageNet dataset, available on the [KaimingHe GitHub](https://github.com/KaimingHe/deep-residual-networks).
+The ResNet model, described in the technical report [Deep Residual Learning for Image Recognition](https://arxiv.org/pdf/1512.03385.pdf), pre-trained on the ImageNet dataset, available on the [MSRA GitHub](https://github.com/KaimingHe/deep-residual-networks).
+
+### Model
 
 The three original models (ResNet-50, ResNet-101, and ResNet-152) can be found in the [model](model/) folder. They require input images of size 224x224. See this [Caffe2 C++ Tutorial](https://github.com/leonardvandriel/caffe2_cpp_tutorial) for an example of how to load this model in Caffe2.
+
+- ResNet-50
+  - [`resnet50_init_net.pb`](model/resnet50_init_net.pb)
+  - [`resnet50_predict_net.pb`](model/resnet50_predict_net.pb)
+- ResNet-101
+  - [`resnet101_init_net.pb`](model/resnet101_init_net.pb)
+  - [`resnet101_predict_net.pb`](model/resnet101_predict_net.pb)
+- ResNet-152
+  - [`resnet152_init_net.pb`](model/resnet152_init_net.pb)
+  - [`resnet152_predict_net.pb`](model/resnet152_predict_net.pb)
 
 ### How the ResNet-101 model was generated
 
